@@ -51,8 +51,8 @@ stringSet3.insert("y")
 stringSet3.insert("z")
 
 let stringSets:[Set<String>] = [stringSet1, stringSet2, stringSet3]
-let bigStringSet:[String] = stringSets.flatMap{$0}
-print(bigStringSet)
+let bigStringArray:[String] = stringSets.flatMap{$0}
+print(bigStringArray)
 
 
 
