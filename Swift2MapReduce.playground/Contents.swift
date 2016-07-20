@@ -30,19 +30,25 @@ let optionals33 : [String?] = ["a", nil, "b", nil, "c", nil]
 let nonOptionals33 = optionals33.flatMap{$0}
 print(nonOptionals33)
 
-// #4 flatMap array of nested string sets to one string array  
+// #4.1 flatMap nested string array to string array
+let nestedStrings:[[String]] = [["a", "b", "c"], ["d", "e", "f"]]
+let stringArray:[String] = nestedStrings.flatMap{$0}
+print(stringArray)
+
+
+// #4.2 flatMap array of nested string sets to one string array
 var stringSet1 = Set<String>()
-stringSet1.insert("a1")
-stringSet1.insert("b1")
-stringSet1.insert("c1")
+stringSet1.insert("a")
+stringSet1.insert("b")
+stringSet1.insert("c")
 var stringSet2 = Set<String>()
-stringSet2.insert("a2")
-stringSet2.insert("b2")
-stringSet2.insert("c2")
+stringSet2.insert("1")
+stringSet2.insert("2")
+stringSet2.insert("3")
 var stringSet3 = Set<String>()
-stringSet3.insert("a3")
-stringSet3.insert("b3")
-stringSet3.insert("c3")
+stringSet3.insert("x")
+stringSet3.insert("y")
+stringSet3.insert("z")
 
 let stringSets:[Set<String>] = [stringSet1, stringSet2, stringSet3]
 let bigStringSet:[String] = stringSets.flatMap{$0}
