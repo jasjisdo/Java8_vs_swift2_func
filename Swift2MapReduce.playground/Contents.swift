@@ -25,7 +25,7 @@ let optionals32 : [String?] = ["a", nil, "b", nil, "c", nil]
 let nonOptionals32 = optionals32.filter{$0 != nil}.map{$0}
 print(nonOptionals32)
 
-// #3.2 (alt) filter non present optionals from array string and map present optional to contained values
+// #3.3 (alt) filter non present optionals from array string and map present optional to contained values
 let optionals33 : [String?] = ["a", nil, "b", nil, "c", nil]
 let nonOptionals33 = optionals33.flatMap{$0}
 print(nonOptionals33)
