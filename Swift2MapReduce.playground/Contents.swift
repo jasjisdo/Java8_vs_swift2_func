@@ -35,8 +35,12 @@ let nestedStrings:[[String]] = [["a", "b", "c"], ["d", "e", "f"]]
 let stringArray:[String] = nestedStrings.flatMap{$0}
 print(stringArray)
 
+// #4.2 flatMap nested string array to doubled int array
+let nestedStrings42:[[String]] = [["1", "2", "3"], ["4", "5", "6"]]
+let doubledIntArray:[Int] = nestedStrings42.flatMap{$0.map{Int($0)! * 2}}
+print(doubledIntArray)
 
-// #4.2 flatMap array of nested string sets to one string array
+// #4.3 flatMap array of nested string sets to one string array
 var stringSet1 = Set<String>()
 stringSet1.insert("a")
 stringSet1.insert("b")
