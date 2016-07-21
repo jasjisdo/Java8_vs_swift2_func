@@ -36,9 +36,10 @@ print(ints)
 
 map array (list) of strings to int array (list)
 ```java
+// #1 map array (list) of strings to int array (list)
 ArrayList<String> strings1 = new ArrayList<>(asList("1", "2", "3"));
-ArrayList<Integer> ints = strings1.stream().map(s -> Integer.parseInt(s))
-        .collect(Collectors.toCollection(() -> new ArrayList<>()));
+ArrayList<Integer> ints = strings1.stream().map(Integer::parseInt)
+    .collect(Collectors.toCollection(ArrayList::new));
 System.out.println(ints);
 ```
 
