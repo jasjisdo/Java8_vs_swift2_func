@@ -13,6 +13,8 @@ print(ints)
 ```
 
 ### Java8 Stream API:
+
+map array (list) of strings to int array (list)
 ```java
 ArrayList<String> strings1 = new ArrayList<>(asList("1", "2", "3"));
 ArrayList<Integer> ints = strings1.stream().map(s -> Integer.parseInt(s))
