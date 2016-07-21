@@ -42,5 +42,5 @@ ArrayList<Integer> ints = strings1.stream().map(Integer::parseInt)
 System.out.println(ints);
 ```
 
-### comment
+### conclusion #1
 The example code of this task is almost similar in swift and java8. Yes in java you have to write a bit more than in swift but the concepts are equivalent. Please notice: the java expression `Integer::parseInt` represents `string -> Interger.parseInt(string)`.
