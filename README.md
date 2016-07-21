@@ -15,7 +15,7 @@ public static <E> Stream<E> asStream(E... elements) {
     return Arrays.stream(elements);
 }
 ```
-The first method `asList` is used to create a List in one line like in [google guava library](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/collect/Lists.html#newArrayList(E...)). The second method is used to create a zero, one or more elements containing java8 stream.
+The first method `asList` is used to create a List in one line like in [google guava library](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/collect/Lists.html#newArrayList(E...)). The second method `asStream` is used to create a zero, one or more elements containing java8 stream.
 
 relevant code:
 * [swift2](https://github.com/jasjisdo/Java8_vs_swift2_func/blob/master/Swift2MapReduce.playground/Contents.swift)
