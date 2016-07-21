@@ -15,7 +15,7 @@ public static <E> Stream<E> asStream(E... elements) {
     return Arrays.stream(elements);
 }
 ```
-The first method `asList` is used to create List in one line like in [google guava library](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/collect/Lists.html#newArrayList(E...))
+The first method `asList` is used to create a List in one line like in [google guava library](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/collect/Lists.html#newArrayList(E...))
 
 ## 1. map strings to ints
 
