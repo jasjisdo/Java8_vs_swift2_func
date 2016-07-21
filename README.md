@@ -44,3 +44,28 @@ System.out.println(ints);
 
 ### conclusion #1
 The example code of this task is almost similar in swift and java8. Yes, in java you have to write a bit more than in swift but the concepts are equivalent. Please notice: the java expression `Integer::parseInt` represents `string -> Interger.parseInt(string)`.
+
+## #2 reduce (or aggregate) strings by concatenating them
+
+### Swift 2.0:
+
+reduce array of string by concat elements
+```swift
+let strings2:[String] = ["a", "b", "c"]
+func concat(accumulator: String, current: String) -> String {
+    return accumulator + current
+}
+let string2:String = strings2.reduce("", combine: concat)
+print(string2)
+```
+
+### Java8 Stream API:
+
+reduce array (list) of string by concat elements
+```java
+ArrayList<String> strings2 = new ArrayList<>(asList("a", "b", "c"));
+String string2 = strings2.stream().reduce(String::concat).orElse("");
+System.out.println(string2);
+```
+
+### conclusion #2
