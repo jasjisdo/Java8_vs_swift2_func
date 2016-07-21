@@ -1,6 +1,9 @@
 # Java8_vs_swift2_func
 Comparison of Java8 and Swift2 mapReduce functions
 
+## preface
+
+
 ## 1. map strings to ints
 
 ### Swift 2.0:
