@@ -69,3 +69,4 @@ System.out.println(string2);
 ```
 
 ### conclusion #2
+Maybe there is a better solution for swift, but at this time it seems that swift need a extra defined concat function to accumulate the String elements. The reduce function of swift also need a initial element as first parameter. In this case the neutral elemet of String is needed `""`.
