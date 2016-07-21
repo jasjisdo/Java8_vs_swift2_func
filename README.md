@@ -4,6 +4,8 @@ Comparison of Java8 and Swift2 mapReduce functions
 ## 1 map strings to ints
 
 ### Swift 2.0:
+
+map array of strings to int array
 '''
 let strings1:[String] = ["1", "2", "3"]
 let ints:[Int] = strings1.map{Int($0)!}
