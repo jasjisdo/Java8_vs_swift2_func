@@ -2,7 +2,7 @@
 Comparison of Java8 and Swift2 mapReduce functions
 
 ## preface
-I try to compare the usage of map reduce functions of java8 and swift. To simplyfi the java code I used the following extra (or cheating) methods to hold the examples similar as possible.
+I try to compare the usage of map reduce functions of java8 and swift. To simplify the java code I used the following extra (or cheating) methods to hold the examples similar as possible.
 
 ```java
 @SafeVarargs
