@@ -21,7 +21,7 @@ relevant code:
 * [swift2](https://github.com/jasjisdo/Java8_vs_swift2_func/blob/master/Swift2MapReduce.playground/Contents.swift)
 * [java8](https://github.com/jasjisdo/Java8_vs_swift2_func/blob/master/Java8StreamMapReduce.java)
 
-## #1. map strings to ints
+## #1 map strings to ints
 
 ### Swift 2.0:
 
