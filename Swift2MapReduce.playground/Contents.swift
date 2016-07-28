@@ -9,10 +9,7 @@ print(ints)
 
 // #2 reduce array of string by concat elements
 let strings2:[String] = ["a", "b", "c"]
-func concat(accumulator: String, current: String) -> String {
-    return accumulator + current
-}
-let string2:String = strings2.reduce("", combine: concat)
+let string2:String = strings2.reduce(""){$0 + $1}
 print(string2)
 
 // #3.1 filter non present optionals from array string
@@ -22,7 +19,7 @@ print(nonNilOptionals31)
 
 // #3.2 filter non present optionals from array string and map present optional to contained values
 let optionals32 : [String?] = ["a", nil, "b", nil, "c", nil]
-let nonOptionals32 = optionals32.filter{$0 != nil}.map{$0}
+let nonOptionals32 = optionals32.filter{$0 != nil}.map{$0!}
 print(nonOptionals32)
 
 // #3.3 (alt) filter non present optionals from array string and map present optional to contained values
