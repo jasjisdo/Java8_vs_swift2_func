@@ -66,4 +66,4 @@ System.out.println(string2);
 ```
 
 ### conclusion #2
-~~Maybe there is a better solution for swift, but at this time it seems that swift need a extra defined concat function to accumulate the String elements.~~ Swift has like Java8 a short way to reduce array of strings. But the reduce function of swift need a initial element as first parameter. In this case the neutral element of String is needed `""`.
+~~Maybe there is a better solution for swift, but at this time it seems that swift need a extra defined concat function to accumulate the String elements.~~ Swift has like Java8 a short way to reduce array of strings. But the reduce function of swift needs a initial element as first parameter. In this case the neutral element of String is needed `""`.
