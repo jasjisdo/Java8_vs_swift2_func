@@ -52,10 +52,7 @@ The example code of this task is almost similar in swift and java8. Yes, in java
 reduce array of string by concat elements
 ```swift
 let strings2:[String] = ["a", "b", "c"]
-func concat(accumulator: String, current: String) -> String {
-    return accumulator + current
-}
-let string2:String = strings2.reduce("", combine: concat)
+let string2:String = strings2.reduce(""){$0 + $1}
 print(string2)
 ```
 
@@ -69,4 +66,4 @@ System.out.println(string2);
 ```
 
 ### conclusion #2
-Maybe there is a better solution for swift, but at this time it seems that swift need a extra defined concat function to accumulate the String elements. The reduce function of swift also need a initial element as first parameter. In this case the neutral element of String is needed `""`.
+~~Maybe there is a better solution for swift, but at this time it seems that swift need a extra defined concat function to accumulate the String elements.~~ Swift has like Java8 a short way to reduce array of strings. But the reduce function of swift need a initial element as first parameter. In this case the neutral element of String is needed `""`.
